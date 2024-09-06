@@ -1,0 +1,85 @@
+.outer {
+  display: flex;
+  flex-wrap: wrap;
+  height:100vh;
+  overflow:scroll;
+  position: fixed;
+  width:100%
+}
+
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 4%;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel p {
+  transform: rotate(90deg);
+
+  
+}
+
+.home {
+  background: beige;
+  z-index: 10;
+}
+
+.one {
+  background: red;
+  z-index: 75;
+}
+
+
+
+.two {
+  background: purple;
+  z-index: 50;
+}
+
+.three {
+  background: orange;
+  z-index: 25;
+}
+
+.active {
+  width: 88%;
+}
+
+.active p{
+  display: none;
+}
+
+
+
+@keyframes expandHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animateHeightThree {
+  height: 0;
+  animation: expandHeight 1s ease-in-out forwards;
+}
+
+.animateHeightTwo {
+  height: 0;
+  animation: expandHeight 1s ease-in-out forwards;
+  animation-delay: 0.25s; /* Delay the animation by 0.5 seconds */
+}
+
+.animateHeightOne {
+  height: 0;
+  animation: expandHeight 1s ease-in-out forwards;
+  animation-delay: 0.5s; /* Delay the animation by 0.5 seconds */
+}
+
