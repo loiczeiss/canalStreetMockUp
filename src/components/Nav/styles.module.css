@@ -31,19 +31,25 @@
 }
 
 .one {
-  background: red;
+  background: #5ea3ec
+
+  ;
   z-index: 75;
 }
 
 
 
 .two {
-  background: purple;
+  background: #f64444
+
+  ;
   z-index: 50;
 }
 
 .three {
-  background: orange;
+  background: #ffb400
+
+  ;
   z-index: 25;
 }
 
