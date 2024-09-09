@@ -4,32 +4,35 @@ import localFont from "next/font/local";
 import NavBar from "@/components/Nav/Nav";
 import "./globals.css";
 import Menu from "@/components/Menu";
+import FooterComp from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 export const apercuFont = localFont({
   src: [
     {
-      path: './ApercuMonoProRegular.ttf',
+      path: './fonts/apercu/ApercuMonoProRegular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './ApercuMonoProMedium.ttf',
+      path: './fonts/apercu/ApercuMonoProMedium.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: './ApercuMonoProBold.ttf',
+      path: './fonts/apercu/ApercuMonoProBold.ttf',
       weight: '800',
       style: 'normal',
     },
     {
-      path: './ApercuMonoProLight.ttf',
+      path: './fonts/apercu/ApercuMonoProLight.ttf',
       weight: '200',
       style: 'normal',
     },
   ],
 });
+
+export const ogg = localFont({src: "./fonts/ogg/oggBold.ttf"})
 
  const metadata: Metadata = {
   title: "Create Next App",
@@ -46,6 +49,7 @@ export default function RootLayout({
       <body className={apercuFont.className}>
         <Menu />
         {children}
+        <FooterComp/>
       </body>
     </html>
   );

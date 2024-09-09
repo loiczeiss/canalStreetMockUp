@@ -1,0 +1,6 @@
+.footerActionCall{
+
+    background-image: repeating-linear-gradient(-74deg,rgba(0,0,0,.2),rgba(0,0,0,.2) 1px,transparent 0,transparent 4px),repeating-linear-gradient(-74deg,rgba(0,0,0,.2),rgba(0,0,0,.2) 1px,transparent 0,transparent 4px);
+    background-position: 0 0,0 100%;
+
+    animation: none;}
