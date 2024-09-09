@@ -1,11 +1,73 @@
+.about{
+  background-color: white;
+  transform-origin: top left;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+
 .food {
   background-color: #5ea3ec;
+  transform-origin: top right;
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
 }
 
 .retail {
   background-color: #f64444;
+  transform-origin: bottom left;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
 }
 
 .community {
   background-color: #ffb400;
+  transform-origin: bottom right;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+
+@keyframes expandHeightAndWidth {
+  from {
+    height: 50%;
+    width: 50%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes shrinkHeightAndWidth {
+  from {
+    height: 100%;
+    width: 100%;
+ 
+  }
+  to {
+    height: 0;
+    width: 0;
+
+  }
+}
+
+.animate{
+  animation: expandHeightAndWidth 2s ease-in-out forwards;
+}
+
+.animate1{
+  animation: shrinkHeightAndWidth 2s ease-in forwards;
 }
