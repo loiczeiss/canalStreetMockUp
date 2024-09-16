@@ -32,7 +32,22 @@ export const apercuFont = localFont({
   ],
 });
 
-export const ogg = localFont({src: "./fonts/ogg/oggBold.ttf"})
+export const ogg = localFont({src: [
+  {
+    path: './fonts/ogg/oggMedium.otf',
+    weight: '400',
+    style: 'normal',
+  },
+  {
+    path: './fonts/ogg/oggBold.ttf',
+    weight: '800',
+    style: 'normal',
+  },
+  {
+    path: './fonts/ogg/oggLight.otf',
+    weight: '200',
+    style: 'normal',
+  },]})
 
  const metadata: Metadata = {
   title: "Create Next App",
