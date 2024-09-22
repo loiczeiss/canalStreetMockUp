@@ -64,7 +64,7 @@ export default function NavMobile() {
       >
         <Image
           onClick={handleCloseMenu}
-          className="fixed top-12 right-8"
+          className="fixed top-12 right-8 z-20"
           width={30}
           src={Close}
           alt="closeButton"
